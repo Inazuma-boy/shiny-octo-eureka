@@ -1,0 +1,272 @@
+
+ /* Global Styles */
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #111;
+  color: #fff;
+}
+
+h2 {
+  text-align: center;
+  color: #f39c12;
+  margin-top: 40px;
+}
+
+/* Navigation */
+nav {
+  background-color: #000;
+  padding: 10px 20px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: #f39c12;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Burger icon hidden by default (desktop) */
+.burger {
+  display: none;
+  font-size: 24px;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+  nav ul {
+    display: none;
+    flex-direction: column;
+    background-color: #111;
+    width: 100%;
+    margin-top: 10px;
+    text-align: center;
+  }
+
+  nav ul.show {
+    display: flex;
+  }
+
+  .burger {
+    display: block;
+  }
+}
+
+/* Hero Section */
+.hero {
+  background: url("Coffee background.jpg") no-repeat center center/cover;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  color: #fff;
+}
+
+.hero h1 {
+  font-size: 2.5em;
+  color: #f39c12;
+}
+
+.hero p {
+  font-size: 1.2em;
+  max-width: 600px;
+}
+
+.hero button {
+  background: #f39c12;
+  color: #000;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+/* About Us */
+#about {
+  background: url("swirls.jpg") no-repeat center center/cover;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.pledges {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  margin-top: 40px;
+}
+
+.pledge {
+  background-color: rgba(255,255,255,0.9);
+  color: #000;
+  padding: 20px;
+  border-radius: 8px;
+  width: 250px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
+/* TEAM SECTION */
+.team-section {
+  background: url("Lights background.jpg") no-repeat center center/cover;
+  padding: 60px 20px;
+}
+
+.team-grid {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.member {
+  text-align: center;
+  width: 250px;
+}
+
+.member img {
+  height: 300px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.member h4 {
+  margin-top: 15px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #f39c12;
+}
+
+.member p {
+  background-color: #333;
+  padding: 10px;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+
+/* JOB VACANCIES SECTION */
+#vacancies {
+  background: url("muddy.jpg") no-repeat center center/cover;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.job {
+  background: #eee;
+  color: #000;
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 500px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  text-align: left;
+}
+
+.job button {
+  background: #3498db;
+  color: #fff;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+/* JOB APPLICATION SECTION */
+.job-application-section {
+  background: url("coal.jpg") no-repeat center center/cover;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.job-application-section form {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  margin: auto;
+  gap: 15px;
+}
+
+.job-application-section input,
+.job-application-section button {
+  padding: 10px;
+  border-radius: 4px;
+  border: none;
+}
+
+.job-application-section input[type="file"] {
+  background-color: #fff;
+  color: #000;
+}
+
+.job-application-section button {
+  background-color: #3498db;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* COMPARISON SECTION */
+.comparison-section {
+  background: url("tree.jpg") no-repeat center center/cover;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  padding: 80px 20px;
+  text-align: center;
+  color: #000;
+  flex-wrap: wrap;
+}
+
+.platform {
+  background-color: #fff;
+  padding: 25px 20px;
+  border-radius: 8px;
+  width: 250px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.platform h3 {
+  background-color: #000;
+  color: #fff;
+  padding: 10px;
+  margin: -25px -20px 20px -20px;
+  border-radius: 8px 8px 0 0;
+}
+
+.platform ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.platform li {
+  padding: 5px 0;
+}

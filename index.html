@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hot Beans Web</title>
+  <link rel="stylesheet" href="stylesheet2.css">
+</head>
+<body>
+
+  <!-- Navigation -->
+<nav>
+  <div class="nav-container">
+    <div class="logo">Hot Beans Web</div>
+    <div class="burger" onclick="toggleMenu()">
+      &#9776;
+    </div>
+    <ul id="nav-links">
+      <li><a href="#hero">Home</a></li>
+      <li><a href="#about">About Us</a></li>
+      <li><a href="#team">Meet the Team</a></li>
+      <li><a href="#vacancies">Job Vacancies</a></li>
+      <li><a href="#application">Apply Now</a></li>
+      <li><a href="#comparison">Courses</a></li>
+    </ul>
+  </div>
+</nav>
+
+  <!-- Hero Section -->
+  <section class="hero" id="hero">
+    <h1>We build websites that matter</h1>
+    <p>Hot Beans Web is a UK web development firm that supports junior developers.</p>
+     <button onclick="document.getElementById('about').scrollIntoView({behavior:'smooth'});">Learn more</button>
+  </section>
+
+  <!-- About Us -->
+  <section id="about">
+    <h2>Why Hot Beans?</h2>
+    <p>At Hot Beans Web, we are passionate about creating opportunities for junior developers to learn, grow and thrive in a supportive team environment. We believe in nurturing fresh talent and pushing the boundaries of what we can build together.</p>
+    <div class="pledges">
+      <div class="pledge">
+        <h3>Vision</h3>
+        <p>We strive to deliver innovative and impactful websites that leave a lasting impression on users.</p>
+      </div>
+      <div class="pledge">
+        <h3>Support</h3>
+        <p>Our junior team receives continuous mentorship and learning opportunities to grow professionally.</p>
+      </div>
+      <div class="pledge">
+        <h3>Teamwork</h3>
+        <p>Collaboration is at the heart of everything we do — we win together and grow together.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Team Section -->
+  <section class="team-section" id="team">
+    <h2>Our Junior Team</h2>
+    <div class="team-grid">
+      <div class="member">
+        <img src="Asian 2.png" alt="Team Member 1">
+        <h4>Sara</h4>
+        <p>Front-end specialist with a knack for creating beautiful interfaces.</p>
+      </div>
+      <div class="member">
+        <img src="Asian.png" alt="Team Member 2">
+        <h4>Jay</h4>
+        <p>Back-end guru focused on performance and scalability.</p>
+      </div>
+      <div class="member">
+        <img src="Hijabi.png" alt="Team Member 3">
+        <h4>Zahra</h4>
+        <p>UX designer ensuring every interaction feels smooth and intuitive.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Job Vacancies -->
+  <section id="vacancies">
+    <h2>Job vacancies</h2>
+    <p>Creating opportunities, changing lives.</p>
+    <div class="job">
+      <h3>Web Developer</h3>
+      <p><strong>Location:</strong> Milton Keynes | <strong>Salary:</strong> £23,000-£25,000 per year | <strong>Type:</strong> Full-Time</p>
+      <p><strong>Responsibilities:</strong></p>
+      <ul>
+        <li>Build responsive and visually appealing websites.</li>
+        <li>Work with the team to implement new features.</li>
+      </ul>
+      <p><strong>Requirements:</strong></p>
+      <ul>
+        <li>Good knowledge of HTML5, CSS3, JavaScript.</li>
+        <li>Teamwork and communication skills.</li>
+      </ul>
+      <button>Apply Now</button>
+    </div>
+
+    <div class="job">
+      <h3>UI Designer</h3>
+      <p><strong>Location:</strong> Cambridge | <strong>Salary:</strong> £24,000-£26,000 per year | <strong>Type:</strong> Full-Time</p>
+      <p><strong>Responsibilities:</strong></p>
+      <ul>
+        <li>Create modern UI for web and mobile platforms.</li>
+        <li>Collaborate with developers to ensure design consistency.</li>
+      </ul>
+      <p><strong>Requirements:</strong></p>
+      <ul>
+        <li>Experience in Figma, Adobe XD.</li>
+        <li>Strong creativity and attention to detail.</li>
+      </ul>
+      <button>Apply Now</button>
+    </div>
+
+    <div class="job">
+      <h3>Software Engineer</h3>
+      <p><strong>Location:</strong> Luton | <strong>Salary:</strong> £26,000- 30,000 per year | <strong>Type:</strong> Full-Time</p>
+      <p><strong>Responsibilities:</strong></p>
+      <ul>
+        <li>Develop backend services and APIs.</li>
+        <li>Maintain codebase and fix bugs.</li>
+      </ul>
+      <p><strong>Requirements:</strong></p>
+      <ul>
+        <li>Proficient in Python or Java.</li>
+        <li>Understanding of databases and version control.</li>
+      </ul>
+      <button>Apply Now</button>
+    </div>
+  </section>
+
+  <!-- Job Application -->
+  <section class="job-application-section" id="application">
+    <h2>Job Application</h2>
+    <p>Apply here to become a member of the Hot Beans Web family.</p>
+    <form>
+      <input type="text" placeholder="Name (required)" required>
+      <input type="email" placeholder="Email (required)" required>
+      <input type="tel" placeholder="Phone number (required)" required>
+      <input type="file" required>
+      <button type="submit">Submit</button>
+    </form>
+  </section>
+
+  <!-- Course Comparison -->
+  <section class="comparison-section" id="comparison">
+  <div class="platform">
+    <h3>Solo Learn</h3>
+    <ul>
+      <li>Numerous Challenges</li>
+      <li>10+ Languages available</li>
+      <li>Blogs and discussions</li>
+      <li>24/7 Support</li>
+    </ul>
+    <button onclick="location.href='https://www.sololearn.com/en/'">Learn More</button>
+  </div>
+
+  <div class="platform">
+    <h3>W3 Schools</h3>
+    <ul>
+      <li>10+ Languages available</li>
+      <li>Multiple courses and tutorials</li>
+      <li>Onsite development and testing</li>
+      <li>Available certification</li>
+    </ul>
+    <button onclick="location.href='https://www.w3schools.com/'">Learn More</button>
+  </div>
+
+  <div class="platform">
+    <h3>Code Academy</h3>
+    <ul>
+      <li>Unlimited mobile access</li>
+      <li>Members only content</li>
+      <li>Real world projects</li>
+      <li>Customised learning</li>
+    </ul>
+    <button onclick="location.href='https://www.codecademy.com/?g_network=g&g_productchannel=&g_adid=624951457618&g_locinterest=&g_keyword=codecademy&g_acctid=243-039-7011&g_adtype=&g_keywordid=kwd-41065460761&g_ifcreative=&g_campaign=account&g_locphysical=9045892&g_adgroupid=70492864474&g_productid=&g_source={sourceid}&g_merchantid=&g_placement=&g_partition=&g_campaignid=1726903838&g_ifproduct=&utm_id=t_kwd-41065460761:ag_70492864474:cp_1726903838:n_g:d_c&utm_source=google&utm_medium=paid-search&utm_term=codecademy&utm_campaign=INTL_Brand_Exact&utm_content=624951457618&g_adtype=search&g_acctid=243-039-7011&gad_source=1&gad_campaignid=1726903838&gbraid=0AAAAAon8KZFno-iVLgLt18Wo14Y4vRzga&gclid=Cj0KCQjwxJvBBhDuARIsAGUgNfigq1aBM4CEBxnOEs2WGxv0i3NGwRGx0OYvolIrkcBa6mWi4JqwzPQaAtwcEALw_wcB'">Learn More</button>
+  </div>
+</section>
+<script>
+  function toggleMenu() {
+    const nav = document.getElementById("nav-links");
+    nav.classList.toggle("show");
+  }
+</script>
+</body>
+</html>
